@@ -1,5 +1,26 @@
 <h1> Failed Charges </h1>
+<div>
+  <ul>
+  <% @failed.each do |item| %>
+    <li class="failed"> <%= Customer.find(item.customer_id).first_name %> <%= Customer.find(item.customer_id).last_name %>, Amount: $<%= item.amount %>, Date: <%= item.created_at.to_date %></li>
+    <% end %>
+  </ul>
+</div>
 
 <h1> Disputed Charges </h1>
+<div>
+  <ul>
+  <% @disputed.each do |item| %>
+    <li class="failed"> <%= Customer.find(item.customer_id).first_name %> <%= Customer.find(item.customer_id).last_name %>, Amount: $<%= item.amount %>, Date: <%= item.created_at.to_date %></li>
+    <% end %>
+  </ul>
+</div>
 
 <h1> Successful Charges </h1>
+<div>
+  <ul>
+  <% @successful.each do |item| %>
+    <li class="failed"> <%= Customer.find(item.customer_id).first_name %> <%= Customer.find(item.customer_id).last_name %>, Amount: $<%= item.amount %>, Date: <%= item.created_at.to_date %></li>
+    <% end %>
+  </ul>
+</div>
