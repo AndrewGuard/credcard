@@ -11,7 +11,7 @@
 <div>
   <ul>
   <% @disputed.each do |item| %>
-    <li class="failed"> <%= Customer.find(item.customer_id).first_name %> <%= Customer.find(item.customer_id).last_name %>, Amount: $<%= item.amount %>, Date: <%= item.created_at.to_date %></li>
+    <li class="disputed"> <%= Customer.find(item.customer_id).first_name %> <%= Customer.find(item.customer_id).last_name %>, Amount: $<%= item.amount %>, Date: <%= item.created_at.to_date %></li>
     <% end %>
   </ul>
 </div>
@@ -20,7 +20,7 @@
 <div>
   <ul>
   <% @successful.each do |item| %>
-    <li class="failed"> <%= Customer.find(item.customer_id).first_name %> <%= Customer.find(item.customer_id).last_name %>, Amount: $<%= item.amount %>, Date: <%= item.created_at.to_date %></li>
+    <li class="successful"> <%= Customer.find(item.customer_id).first_name %> <%= Customer.find(item.customer_id).last_name %>, Amount: $<%= item.amount %>, Date: <%= item.created_at.to_date %></li>
     <% end %>
   </ul>
 </div>

@@ -11,3 +11,11 @@
  *= require_self
  *= require_tree .
  */
+
+.failed {
+  background-color: #FF0000;
+}
+
+.disputed {
+  background-color: #FF5400;
+}
