@@ -1,0 +1,22 @@
+development:
+  host: /tmp
+  adapter: postgresql
+  encoding: unicode
+  database: credit_card_development
+  pool: 5
+  timeout: 5000
+
+test:
+  host: /tmp
+  adapter: postgresql
+  encoding: unicode
+  database: credit_card_test
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: credit_card_production
+  pool: 5
+  timeout: 5000
